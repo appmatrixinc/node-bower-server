@@ -1,12 +1,15 @@
 var Sequelize = require("sequelize");
 var _ = Sequelize.Utils._ ;
 
+var config = require('config');
+
 var Database = {
     init: function () {
-        this.sequelize = new Sequelize('development', 'jblanche', '', {
-            dialect: 'postgres',
-            port: 5432
-        }),
+      
+		this.sequelize = new Sequelize(config.database, config.login, config.password, {
+		  host: config.host,
+		  port: config.port
+		}),
 
         this.Package = this.sequelize.define('Package',
           {
