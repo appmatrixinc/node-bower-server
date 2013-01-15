@@ -26,3 +26,4 @@ var config = {
 	login: 'amdev',
 	password: 'AppMatrix9!',
 };
+exports.config = config;
