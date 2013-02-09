@@ -1,21 +1,8 @@
 var Sequelize = require("sequelize");
 var _ = Sequelize.Utils._ ;
 
+var config = require('./config');
 
-var config = {
-	database: 'aminc_my',
-	host: 'localhost',
-	port: 3306,
-	login: 'root',
-	password: 'fred',
-};
-var liveconfig = {
-	database: 'dev_myappmatrix',
-	host: '9874c6c3846579ab85e26d0d3380265a6e598e78.rackspaceclouddb.com',
-	port: 3306,
-	login: 'amdev',
-	password: 'AppMatrix9!',
-};
 
 
 var Database = {

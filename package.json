@@ -15,5 +15,17 @@
   "optionalDependencies": {},
   "engines": {
     "node": "*"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appmatrixinc/node-bower-server.git"
+  },
+  "license": "BSD"
 }
